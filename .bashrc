@@ -94,7 +94,7 @@ alias l='ls -CF'
 export EDITOR=vim
 
 # trekka custom aliases
-~/Documents/bash/spec.sh
+# ~/Documents/bash/spec.sh
 
 alias clean="sudo apt autoremove && sudo apt-get autoclean"
 alias xmod="xmodmap ~/.Xmodmap && xmodmap -e 'clear lock'"
@@ -117,14 +117,10 @@ alias upgrade="sudo nala upgrade"
 alias update="sudo nala update"
 alias cd..="cd .."
 alias cdf="cd .."
-alias subalias="subl /home/trekka/.bashrc"
-alias pws="subl /home/trekka/Documents/Helpful/PWS.txt"
 alias notepad="subl"
-alias tweaks="vim /home/trekka/Documents/Helpful/tweaks"
 alias spec="fastfetch"
 alias tasks="top -E g -e m -d 1 -o %CPU -i"
 alias reload="source ~/.bashrc && clear"
-alias secretme="gnome-terminal -e /home/trekka/Documents/.binla/secr && history -c && clear"
 alias status="clear && df --type=ext4 -h && echo -e && free --giga -h && echo -e"
 alias brc="vim ~/.bashrc"
 alias vrc="vim ~/.vimrc"
