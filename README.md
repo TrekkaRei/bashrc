@@ -1,2 +1,2 @@
 # bashrc
-bashrc rice
+.bashrc ---> /home/*username*/
