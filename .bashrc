@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alohFN'
 alias la='ls -A'
 alias l='ls -CF'
 export EDITOR=vim
@@ -96,6 +96,12 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+alias compat="find ~/.steam/debian-installation/steamapps/compatdata -iname $@"
+alias ryzen=". ~/Documents/bash/ryzenUV.sh"
+alias mango="echo MANGOHUD=1 MANGOHUD_CONFIGFILE=/home/trekka/.config/MangoHud/general.conf %command%"
+alias furry="celluloid '/mnt/sda2/Media/Videos/Anime/Wild Assault - Marquez.mp4'"
+alias worked="vim /home/trekka/Documents/work/worked"
+alias ggit="cd /home/trekka/Documents/git"
 alias gitrepo="cat /home/trekka/Documents/.token"
 alias clean="sudo apt autoremove && sudo apt-get autoclean"
 alias xmod="xmodmap ~/.Xmodmap && xmodmap -e 'clear lock'"
@@ -111,21 +117,11 @@ alias doc="cd ~/Documents"
 alias home="cd ~"
 alias his="history"
 alias cls="clear"
-alias remove="sudo nala remove"
-alias install="sudo nala install"
-alias install2="sudo apt-get install"
-alias upgrade="sudo nala upgrade"
-alias update="sudo nala update"
-alias cd..="cd .."
-alias cdf="cd .."
-alias subalias="subl /home/trekka/.bashrc"
-alias pws="subl /home/trekka/Documents/Helpful/PWS.txt"
 alias notepad="subl"
 alias tweaks="vim /home/trekka/Documents/Helpful/tweaks"
-alias spec="fastfetch"
+alias spec="clear && fastfetch"
 alias tasks="top -E g -e m -d 1 -o %CPU -i"
 alias reload="source ~/.bashrc && clear"
-alias secretme="gnome-terminal -e /home/trekka/Documents/.binla/secr && history -c && clear"
 alias status="clear && df --type=ext4 -h && echo -e && free --giga -h && echo -e"
 alias brc="vim ~/.bashrc"
 alias vrc="vim ~/.vimrc"
