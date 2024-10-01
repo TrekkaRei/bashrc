@@ -71,7 +71,7 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
+	export PS1="\e[1;31m\w\e[0m \e[1;35m>\e[0m "
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -96,11 +96,18 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+alias fetchconf="vim /home/trekka/.config/fastfetch/config.jsonc"
+alias trekkacss="vim /home/trekka/.themes/Trekka/cinnamon/cinnamon.css"
+alias fgg="jobs -l"
+alias rungpe="watch -t -n 1 /home/trekka/Documents/bash/gpescript.sh"
+alias githelp="cat /home/trekka/Documents/helpful/githelp"
+alias mtag="function mtag() {id3v2 -a $1 -t $2 $3}; mtag"
+alias mocpw=". /home/trekka/Documents/bash/mocpwatch.sh"
+alias gpefix="cat /home/trekka/Documents/gpe"
 alias dls="cd ~/Downloads"
 alias cputemp=". ~/Documents/bash/.cpu_temp.sh"
 alias update="sudo nala update"
 alias upgrade="sudo nala upgrade"
-alias gpefix="cat ~/Documents/gpe"
 alias gpecheck="grep enabled /sys/firmware/acpi/interrupts/*"
 alias gitdir=". /home/trekka/Documents/bash/gitdir.sh"
 alias gitload=". /home/trekka/Documents/bash/gitload.sh"
@@ -116,21 +123,23 @@ alias ggit="cd /home/trekka/Documents/git"
 alias gittoken="echo ' ' && cat /home/trekka/Documents/.token"
 alias clean="sudo apt autoremove && sudo apt-get autoclean"
 alias xmod="xmodmap ~/.Xmodmap && xmodmap -e 'clear lock'"
-alias foxedit="vim ~/.mozilla/firefox/eprwbjq2.default-release/chrome/userChrome.css"
+alias foxcss="vim ~/.mozilla/firefox/eprwbjq2.default-release/chrome/userChrome.css"
 alias pinger="tput civis && watch -x -b -t -n 0.5 ~/Documents/bash/latency.sh" 
 alias cssedit="vim -O ~/.themes/Glitch/cinnamon/cinnamon.css /usr/share/cinnamon/theme/cinnamon.css"
-alias cma="unimatrix -c cyan -s 92 -o -i"
+alias cma="unimatrix -c blue -s 92 -o -i"
 alias recon="bluetoothctl disconnect 88:08:94:10:D0:3C && sleep 2s && bluetoothctl connect 88:08:94:10:D0:3C"
 alias cell="celluloid"
 alias bashdir="cd ~/Documents/bash/"
 alias vimclear="rm -fr ~/.vimrc.swp && rm -f ~/.vimrc.swo"
 alias doc="cd ~/Documents"
-alias home="cd ~"
+alias home="cd ~ && clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2
+"
 alias his="history"
-alias cls="clear"
+alias cls="clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2"
 alias notepad="subl"
 alias tweaks="vim /home/trekka/Documents/Helpful/tweaks"
-alias spec="clear && fastfetch"
+alias spec="clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2
+"
 alias tasks="top -E g -e m -d 1 -o %CPU -i"
 alias reload="source ~/.bashrc && clear"
 alias status="clear && df --type=ext4 -h && echo -e && free --giga -h && echo -e"
