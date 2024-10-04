@@ -96,6 +96,12 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+alias rec1=". /home/trekka/Documents/bash/record1mon.sh"
+alias rec0=". /home/trekka/Documents/bash/record0mon.sh"
+alias mpv1=". /home/trekka/Documents/bash/mpvrun.sh"
+alias mocpstate="mocp --info | grep -i state | cut -c 8-12"
+alias sym="cat /home/trekka/Documents/bash/symbols"
+alias sgrep="grep --color=auto -isnT"
 alias fetchconf="vim /home/trekka/.config/fastfetch/config.jsonc"
 alias trekkacss="vim /home/trekka/.themes/Trekka/cinnamon/cinnamon.css"
 alias fgg="jobs -l"
@@ -141,7 +147,7 @@ alias tweaks="vim /home/trekka/Documents/Helpful/tweaks"
 alias spec="clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2
 "
 alias tasks="top -E g -e m -d 1 -o %CPU -i"
-alias reload="source ~/.bashrc && clear"
+alias reload="source ~/.bashrc && clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2"
 alias status="clear && df --type=ext4 -h && echo -e && free --giga -h && echo -e"
 alias brc="vim ~/.bashrc"
 alias vrc="vim ~/.vimrc"
