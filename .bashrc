@@ -96,6 +96,7 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+
 alias ytdl=". /home/trekka/Documents/bash/ytd.sh"
 alias rescale=". /home/trekka/Documents/bash/ffmpegscale.sh"
 alias rec1=". /home/trekka/Documents/bash/record1mon.sh"
@@ -109,7 +110,7 @@ alias trekkacss="vim /home/trekka/.themes/Trekka/cinnamon/cinnamon.css"
 alias fgg="jobs -l"
 alias rungpe="watch -t -n 1 /home/trekka/Documents/bash/gpescript.sh"
 alias githelp="cat /home/trekka/Documents/helpful/githelp"
-alias mtag="function mtag() {id3v2 -a $1 -t $2 $3}; mtag"
+alias mtag=". /home/trekka/Documents/bash/mtag.sh"
 alias mocpw=". /home/trekka/Documents/bash/mocpwatch.sh"
 alias gpefix="cat /home/trekka/Documents/gpe"
 alias dls="cd ~/Downloads"
