@@ -96,7 +96,7 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
-
+alias twt=". /home/trekka/Documents/bash/twt.sh"
 alias ytdl=". /home/trekka/Documents/bash/ytd.sh"
 alias rescale=". /home/trekka/Documents/bash/ffmpegscale.sh"
 alias rec1=". /home/trekka/Documents/bash/record1mon.sh"
