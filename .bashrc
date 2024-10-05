@@ -96,6 +96,7 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+alias ytdir="cd ~/Music/yt-dl/"
 alias podc=". /home/trekka/Documents/bash/podc.sh"
 alias twt=". /home/trekka/Documents/bash/twt.sh"
 alias ytdl="cd ~/Music/yt-dl; . /home/trekka/Documents/bash/ytd.sh"
