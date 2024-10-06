@@ -96,7 +96,7 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
-alias hwtemp=". /home/trekka/Documents/bash/temp/termtemp.sh"
+alias hwosd=". /home/trekka/Documents/bash/hw-osd/osdtopdock.sh"
 alias recdir="cd /home/trekka/Documents/recording"
 alias reca1=". /home/trekka/Documents/bash/playrec.sh"
 alias reca=". /home/trekka/Documents/bash/recordaudio.sh"
