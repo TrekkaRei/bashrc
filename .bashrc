@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alohFN'
+alias ll='ls -alohFN --group-directories-first'
 alias la='ls -A'
 alias l='ls -CF'
 export EDITOR=vim
@@ -96,6 +96,9 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+alias recdir="cd /home/trekka/Documents/recording"
+alias reca1=". /home/trekka/Documents/bash/playrec.sh"
+alias reca=". /home/trekka/Documents/bash/recordaudio.sh"
 alias ytdir="cd ~/Music/yt-dl/"
 alias podc=". /home/trekka/Documents/bash/podc.sh"
 alias twt=". /home/trekka/Documents/bash/twt.sh"
