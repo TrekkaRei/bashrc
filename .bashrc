@@ -71,7 +71,7 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-	export PS1="\e[40;35m\w\e[0m \e[1;32m>\e[0m "
+	export PS1="\[\e[40;35m\]\w \[\e[1;32m\]>\[\e[0m\] "
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
