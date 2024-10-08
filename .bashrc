@@ -96,7 +96,10 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
-alias hwosd=". /home/trekka/Documents/bash/hw-osd/osdtopdock.sh"
+alias w1="watch -t -n 1 $*"
+alias restartrgb="pkill openrgb; sleep 1; . /home/trekka/Documents/bash/restartRGB.sh & exit"
+alias cal1="ncal -b"
+alias hwosd=". ~/.hw-osd/Main.sh"
 alias recdir="cd /home/trekka/Documents/recording"
 alias reca1=". /home/trekka/Documents/bash/playrec.sh"
 alias reca=". /home/trekka/Documents/bash/recordaudio.sh"
@@ -128,7 +131,7 @@ alias gitdir=". /home/trekka/Documents/bash/gitdir.sh"
 alias gitload=". /home/trekka/Documents/bash/gitload.sh"
 alias c="cd .."
 alias konsoleq="konsole --fullscreen --layout ~/.trekka-konsole-layout --tabs-from-file ~/.konsole/trekka"
-alias mocp="mocp -O ShowFormat=no -O HideFileExtension=yes -O Repeat=yes -O Keymap=~/.moc/keymap -O PlaylistFullPaths=no -T /usr/share/moc/themes/darkdot_theme" 
+alias mocp="mocp -O ShowFormat=no -O HideFileExtension=yes -O Repeat=yes -O Keymap=~/.moc/keymap -O PlaylistFullPaths=no -T /home/trekka/.moc/themes/trekka" 
 alias compat="find ~/.steam/debian-installation/steamapps/compatdata -iname $*"
 alias ryzen=". ~/Documents/bash/ryzenUV.sh"
 alias mango="echo MANGOHUD=1 MANGOHUD_CONFIGFILE=/home/trekka/.config/MangoHud/general.conf %command%"
