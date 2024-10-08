@@ -96,6 +96,7 @@ export EDITOR=vim
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+alias btoptheme="sudo vim /usr/share/btop/themes/trekka.theme"
 alias w1="watch -t -n 1 $*"
 alias restartrgb="pkill openrgb; sleep 1; . /home/trekka/Documents/bash/restartRGB.sh & exit"
 alias cal1="ncal -b"
