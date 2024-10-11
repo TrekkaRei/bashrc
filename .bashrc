@@ -71,7 +71,7 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-	export PS1="\[\e[40;35m\]\w \[\e[1;32m\]>\[\e[0m\] "
+	export PS1="\[\e[1;31m\]\w \[\e[1;32m\]>\[\e[0m\] "
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -89,13 +89,15 @@ fi
 
 # some more ls aliases
 alias ll='ls -alohFN --group-directories-first'
-alias la='ls -A'
-alias l='ls -CF'
+alias la='ls -sahCF --sort=extension'
 export EDITOR=vim
 
 # trekka custom aliases
 ~/Documents/bash/spec.sh
 
+alias vimtheme="sudo vim /usr/share/vim/vim82/colors/trekka.vim"
+alias kcpu=". /home/trekka/Documents/bash/highcpu.sh"
+alias qs="ls -sahCF --sort=extension | grep -i $*"
 alias btoptheme="sudo vim /usr/share/btop/themes/trekka.theme"
 alias w1="watch -t -n 1 $*"
 alias restartrgb="pkill openrgb; sleep 1; . /home/trekka/Documents/bash/restartRGB.sh & exit"
@@ -164,8 +166,6 @@ alias reload="source ~/.bashrc && clear && fastfetch --logo 'linux-mint_small' -
 alias status="clear && df --type=ext4 -h && echo -e && free --giga -h && echo -e"
 alias brc="vim ~/.bashrc"
 alias vrc="vim ~/.vimrc"
-alias l="ls -CF -s --sort extension"
-alias la="ls -aCF -s --sort extension" 
 
 # backup
 alias backupvifm="cp -v ~/.config/vifm/vifmrc ~/Documents/Presets/vifm/  && cp -v ~/.config/vifm/colors/trekka.vifm ~/Documents/Presets/vifm/"
