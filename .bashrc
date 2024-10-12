@@ -92,9 +92,10 @@ alias ll='ls -alohFN --group-directories-first'
 alias la='ls -sahCF --sort=extension'
 export EDITOR=vim
 
-# trekka custom aliases
 ~/Documents/bash/spec.sh
 
+# trekka custom aliases
+alias links="cd ~.links; ls -sahCF"
 alias vimtheme="sudo vim /usr/share/vim/vim82/colors/trekka.vim"
 alias kcpu=". /home/trekka/Documents/bash/highcpu.sh"
 alias qs="ls -sahCF --sort=extension | grep -i $*"
