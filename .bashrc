@@ -95,6 +95,7 @@ export EDITOR=vim
 ~/Documents/bash/spec.sh
 
 # trekka custom aliases
+alias hide="xprop -name 'MPV player' -f _MOTIF_WM_HINTS 32c -set _MOTIF_WM_HINTS '0x2, 0x0, 0x2, 0x0, 0x0'"
 alias links="cd ~.links; ls -sahCF"
 alias vimtheme="sudo vim /usr/share/vim/vim82/colors/trekka.vim"
 alias kcpu=". /home/trekka/Documents/bash/highcpu.sh"
