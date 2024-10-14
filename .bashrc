@@ -71,11 +71,12 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-	export PS1="\[\e[1;31m\]\w \[\e[1;32m\]>\[\e[0m\] "
+	 export PS1="\[\e[1;31m\]\w \[\e[1;32m\]>\[\e[0m\] "
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    test -r ~/.dircolors && eval "$()" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
+    alias ls='ls --color=auto --group-directories-first'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -90,11 +91,13 @@ fi
 # some more ls aliases
 alias ll='ls -alohFN --group-directories-first'
 alias la='ls -sahCF --sort=extension'
+alias pwd="pwd"
 export EDITOR=vim
 
-~/Documents/bash/spec.sh
+# ~/Documents/bash/spec.sh
 
 # trekka custom aliases
+alias konstart="printf $'\033]2;%s\007' "KON""
 alias hide="xprop -name 'MPV player' -f _MOTIF_WM_HINTS 32c -set _MOTIF_WM_HINTS '0x2, 0x0, 0x2, 0x0, 0x0'"
 alias links="cd ~.links; ls -sahCF"
 alias vimtheme="sudo vim /usr/share/vim/vim82/colors/trekka.vim"
@@ -149,22 +152,22 @@ alias xmod="xmodmap ~/.Xmodmap && xmodmap -e 'clear lock'"
 alias foxcss="vim ~/.mozilla/firefox/eprwbjq2.default-release/chrome/userChrome.css"
 alias pinger="tput civis && watch -x -b -t -n 0.5 ~/Documents/bash/latency.sh" 
 alias cssedit="vim -O ~/.themes/Glitch/cinnamon/cinnamon.css /usr/share/cinnamon/theme/cinnamon.css"
-alias cma="unimatrix -c blue -s 92 -o -i"
+alias cma="unimatrix -c green -s 92 -o -i"
 alias recon="bluetoothctl disconnect 88:08:94:10:D0:3C && sleep 2s && bluetoothctl connect 88:08:94:10:D0:3C"
 alias cell="celluloid"
 alias bashdir="cd ~/Documents/bash/"
 alias vimclear="rm -fr ~/.vimrc.swp && rm -f ~/.vimrc.swo"
 alias doc="cd ~/Documents"
-alias home="cd ~ && clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2
-"
+alias home="cd ~ && clear"
+
 alias his="history"
-alias cls="clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2"
+alias cls="clear"
 alias notepad="subl"
 alias tweaks="vim /home/trekka/Documents/Helpful/tweaks"
 alias spec="clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2
 "
 alias tasks="top -E g -e m -d 1 -o %CPU -i"
-alias reload="source ~/.bashrc && clear && fastfetch --logo 'linux-mint_small' --logo-padding-top 2"
+alias reload="source ~/.bashrc && clear"
 alias status="clear && df --type=ext4 -h && echo -e && free --giga -h && echo -e"
 alias brc="vim ~/.bashrc"
 alias vrc="vim ~/.vimrc"
