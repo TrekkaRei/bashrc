@@ -71,7 +71,7 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-	 export PS1="\n\[\e[1;35m\]\[[\w\]]\e[0m\[\e[1;32m\] \[[\A]\] \[[\\[\e[1;34m\]\[\!\]\[\e[0m\]\]]\] \[[\[\e[1;31m\]\j\]\e[0m\]]\]\n ╰⮞ \[\e[0m\]"
+	 export PS1="\n\[\e[1;35m\][\w]\e[0m\[\e[1;32m\] [\A] [\[\e[1;34m\]\!\[\e[0m\]] [\[\e[1;31m\]\j\e[0m\]]\n ╰> \[\e[0m\]"
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$()" || eval "$(dircolors -b)"
@@ -93,10 +93,13 @@ alias ll='ls -alohFN --group-directories-first'
 alias la='ls -sahCF --sort=extension'
 alias pwd="pwd"
 export EDITOR=vim
+export TERM=xterm-256color
 
 # ~/Documents/bash/spec.sh
 
 # trekka custom aliases
+alias runmocp=". /home/trekka/Documents/bash/mocp.sh"
+alias bdir="cd ~/Documents/bash/"
 alias konstart="printf $'\033]2;%s\007' "KON""
 alias hide="xprop -name 'MPV player' -f _MOTIF_WM_HINTS 32c -set _MOTIF_WM_HINTS '0x2, 0x0, 0x2, 0x0, 0x0'"
 alias links="cd ~.links; ls -sahCF"
