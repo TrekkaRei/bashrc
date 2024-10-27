@@ -98,6 +98,7 @@ export TERM=xterm-256color
 # ~/Documents/bash/spec.sh
 
 # trekka custom aliases
+alias clock="watch -t -n 1 date +%R"
 alias runmocp=". /home/trekka/Documents/bash/mocp.sh"
 alias bdir="cd ~/Documents/bash/"
 alias konstart="printf $'\033]2;%s\007' "KON""
